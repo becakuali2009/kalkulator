@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Saya</title>
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      position: relative;
+      background-color: #000;
+      color: #f1f1f1;
+    }
+
+   body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://i.gifer.com/Rkwm.gif') no-repeat center center;
+  background-size: cover;
+  opacity: 0.12;
+  z-index: -1;
+}
+
+    header {
+      background: transparent;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    nav {
+      background: transparent;
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+   nav a {
+  display: inline-block;
+  color: #e0f7fa;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s ease;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    section {
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 960px;
+    }
+
+    .about, .projects, .skills, .contact {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: 0.3s ease;
+      margin-bottom: 40px;
+    }
+
+    .about:hover, .projects:hover, .skills:hover, .contact:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+    }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .project-item {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 14px;
+      width: 100%;
+      max-width: 350px;
+      border-left: 5px solid #ffffff55;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      color: #f2f2f2;
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+    }
+
+    .project-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      margin: 15px auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills-list li {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 12px 20px;
+      border-radius: 30px;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+      font-weight: 700;
+      min-width: 120px;
+      text-align: center;
+      color: #e0f7fa;
+      transition: background 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skills-list li:hover {
+      background: #00acc1;
+      color: #fff;
+    }
+
+    .skill-icon {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 1px rgba(0,0,0,0.5));
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: transparent;
+      color: #ffffff;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      margin: 5px 15px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 20px;
+      transition: opacity 0.3s ease;
+      color: #fff;
+    }
+
+    .social-links a:hover {
+      opacity: 0.75;
+    }
+
+    .social-links a i {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portofolio Saya</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+    <!-- Gambar profil bisa GIF atau JPG -->
+    <img src="https://i.gifer.com/o6m.gif" alt="Foto Profil" class="profile-pic" loading="lazy" />
+  </header>
+
+  <nav>
+    <a href="#about">Tentang Saya</a>
+    <a href="#projects">Proyek</a>
+    <a href="#skills">Skill</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah seorang web developer yang bersemangat dalam membuat aplikasi web yang interaktif dan responsif. Memiliki pengalaman dalam pengembangan front-end dan sedikit back-end.</p>
+  </section>
+
+  <section id="projects" class="projects">
+  <h2>Proyek Saya</h2>
+  <div class="projects-container">
+    <a href="https://example-portfolio.com" target="_blank" class="project-item-link">
+      <div class="project-item">
+        <h3>Website Portfolio</h3>
+        <img src="https://i.ibb.co/7JMfC45/portfolio-screenshot.png" alt="Portfolio Project" class="project-image" />
+        <p>Situs portofolio pribadi dengan desain modern dan responsif menggunakan HTML, CSS, dan JavaScript.</p>
+      </div>
+    </a>
+
+    <a href="https://example-web-cacing.com" target="_blank" class="project-item-link">
+      <div class="project-item">
+        <h3>Web Cacing</h3>
+        <img src="https://i.ibb.co/wL5LJbK/worm-web.png" alt="Web Cacing Project" class="project-image" />
+        <p>Website interaktif game cacing sederhana menggunakan JavaScript murni.</p>
+      </div>
+    </a>
+
+    <a href="https://example-web-kalkulator.com" target="_blank" class="project-item-link">
+      <div class="project-item">
+        <h3>Web Kalkulator</h3>
+        <img src="https://i.ibb.co/7Wg6Z1X/calculator-web.png" alt="Web Kalkulator Project" class="project-image" />
+        <p>Aplikasi kalkulator sederhana dengan fungsi dasar, dibuat menggunakan HTML, CSS, dan JavaScript.</p>
+      </div>
+    </a>
+
+    <a href="https://example-web-kasir.com" target="_blank" class="project-item-link">
+      <div class="project-item">
+        <h3>Web Kasir</h3>
+        <img src="https://i.ibb.co/8bQzXtc/cashier-web.png" alt="Web Kasir Project" class="project-image" />
+        <p>Sistem kasir berbasis web untuk manajemen penjualan dan inventaris sederhana.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <section id="skills" class="skills">
+    <h2>Skill Saya</h2>
+    <ul class="skills-list">
+      <li><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" class="skill-icon" /> HTML5</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" class="skill-icon" /> CSS3</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="skill-icon" /> JavaScript</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-icon" /> React.js</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js" class="skill-icon" /> Node.js</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="skill-icon" /> Git & GitHub</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="UI/UX" class="skill-icon" /> UI/UX Design</li>
+      <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Next.js" class="skill-icon" /> Next.js</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Kontak Saya</h2>
+    <p>Terhubung dengan saya melalui sosial media atau email berikut:</p>
+    <div class="social-links">
+      <a href="https://instagram.com/username" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://wa.me/628123456789" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+      <a href="https://www.tiktok.com/@username" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+      <a href="mailto:email@example.com"><i class="fas fa-envelope"></i>Email</a>
+      <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 </p>
+  </footer>
+
+</body>
+</html>
